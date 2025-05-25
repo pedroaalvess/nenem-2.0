@@ -65,9 +65,10 @@
     }
 
     .logo {
-      width: 150px;
+      width: 200px;
       height: auto;
       margin-bottom: 30px;
+      max-width: 100%;
     }
 
     .btn-inscricao {
@@ -99,6 +100,16 @@
     .termos a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+
+      .logo {
+        width: 150px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -107,7 +118,7 @@
     <img src="https://i.imgur.com/gY6Nwvb.png" alt="Ícone flutuante" class="floating-icon">
     <div class="container">
       <div class="mensagem-inscricao">Clique no botão abaixo e realize sua inscrição</div>
-      <img src="https://i.imgur.com/zySVObl.png" alt="Logo" class="logo">
+      <img src="https://i.imgur.com/zjBlqQ5.png" alt="Logo" class="logo">
       <button class="btn-inscricao" onclick="window.location.href='../chat'">INSCREVA-SE CLICANDO AQUI</button>
       <div class="termos">
         <a href="#">Termos de Uso</a> e <a href="#">Política de Privacidade</a>
@@ -116,8 +127,3 @@
   </div>
 </body>
 </html>
-
-</div>
-
-<p style="font-size: 12px; color: #777; text-align: center;">
-  Esta é uma página independente, sem qualquer vínculo com instituições públicas ou governamentais.<br>
